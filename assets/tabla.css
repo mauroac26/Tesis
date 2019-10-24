@@ -1,0 +1,132 @@
+.tableP
+{
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.5px solid black;
+ /*border: 1px solid black;*/
+
+   
+}
+.tableP td, tr
+{
+    padding: 5px;
+    border: 0.5px solid black;
+
+}
+
+.tableP thead
+{
+    background-color: #A6A8AD;
+    border-bottom: solid 2px #666;
+    color: black;
+    /*position: fixed;*/
+    width: 98%;
+    font-style: normal;
+    font-size: 14px;
+
+}
+
+.tableP tr:nth-child(even)
+{
+    background-color: #ddd;
+}
+
+.tableP tr:hover
+{
+    background-color: #0384bf;
+}
+
+.tablePe 
+{
+    background-color: #CD5C5C;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.5px solid black;
+ /*border: 1px solid black;*/
+
+   
+}
+.tablePe td, tr
+{
+    padding: 5px;
+    border: 0.5px solid black;
+
+}
+
+.tablePe thead
+{
+    background-color: #A6A8AD;
+    border-bottom: solid 2px #666;
+    color: black;
+  /*  position: fixed;*/
+    width: 98%;
+    font-style: normal;
+    font-size: 14px;
+
+}
+
+.tablePe tr:nth-child(even)
+{
+    background-color: #ddd;
+}
+
+.tablePe tr:hover
+{
+    background-color: #0384bf;
+}
+
+
+/*  tabla detalleCompra*/
+.tablaModal
+{
+
+    width: 100%;
+    background-color: White;
+
+
+}
+
+.tablaModal tr, td
+{
+     left: 20px;
+       text-align: left;
+     padding-top: 1px;
+}
+
+/*.tablaModal tr
+{
+     
+      height: 10px;
+}
+}*/
+.tableModal1
+{
+   
+padding: 5px;
+    width: 100%;
+    background-color: white;
+    height: 20px;
+   border-bottom: : 1px solid #7F817F;
+}
+
+.tableModal1 thead 
+{
+    background-color: black;
+    border-bottom: 0px solid #666;
+    color: white;
+   
+    width: 100%;
+    font-style: normal;
+    font-size: 11px;
+border: 0px solid blue;
+}
+
+.tableModal1 th, td
+{
+    border: 1px solid black;
+}
+
+

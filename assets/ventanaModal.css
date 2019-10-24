@@ -1,0 +1,183 @@
+.modalDialog {
+    position: fixed;
+    font-family: Verdana;
+    font-size: 4pt;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999 !important;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+     
+    width: 680px;
+    height: 725px;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    /*border-radius: 10px;*/
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    font-size: 12px;
+}
+
+.head h1
+{
+    font-family: Verdana;
+	color: black;
+	height: 20px;
+	width: 552px;
+	top: 0;
+	position: relative;
+	font-size:15px;
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+
+ p
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+.modalDialog1 {
+    
+    position: fixed;
+    font-family: Verdana;
+    font-size: 4pt;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog1:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog1 > div {
+     
+    width: 552px;
+    height: 605px;
+    position: relative;
+    margin: 3% auto;
+    padding: 5px 20px 13px 20px;
+    /*border-radius: 10px;*/
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    font-size: 12px;
+}
+
+.modalLibroIvaCompra {
+    
+    position: fixed;
+    font-family: Verdana;
+    font-size: 4pt;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalLibroIvaCompra:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalLibroIvaCompra > div {
+     
+    width: 560px;
+    height: 280px;
+    position: relative;
+    margin: 3% auto;
+    padding: 5px 20px 13px 20px;
+    /*border-radius: 10px;*/
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    font-size: 12px;
+}
+
+.modalVencimiento {
+    
+    position: fixed;
+    font-family: Verdana;
+    font-size: 4pt;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalVencimiento:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalVencimiento > div {
+     
+    width: 500px;
+    height: 240px;
+    position: relative;
+    margin: 3% auto;
+    padding: 5px 20px 13px 20px;
+    /*border-radius: 10px;*/
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    font-size: 12px;
+}
