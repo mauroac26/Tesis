@@ -1,9 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 
-</body>
-</html>
+<a data-toggle="tooltip" data-placement="left" title="Tooltip" href="">asdasd</a>

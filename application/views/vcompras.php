@@ -269,7 +269,7 @@
 
 <input type="button" id="btnAceptarCompra" class="btn btn-primary btn-sm" name="aceptar" onclick="registrarCompras(this.id);" value="Aceptar">
 
-<button id="close-btn" class="btn btn-primary btn-sm" type="button" onclick="closeModal();">Cerrar</button>
+<button class="btn btn-light btn-sm" type="button" data-dismiss="modal">Cerrar</button>
 
 						</div>
 </form>
@@ -283,7 +283,7 @@
 
 <!-- MODAL INFORMACION DE COMPRA -->
 
-<div class="modal" id="modalEditar">
+<div class="modal fade" id="modalEditar">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 
@@ -311,7 +311,7 @@
 						</div>
 					 </div>
 					 
-					 <div class="form-row">
+					<div class="form-row">
 						<div class="col-sm-12" style="border-bottom: 0.2px solid #7F817F;">
 								Fecha Carga
 					 <label class="float-right" id="eFCarga"></label>
@@ -319,29 +319,55 @@
 						</div>
 
 						</div>
+            
+             <div class="form-row">
+						<div class="col-sm-12" style="border-bottom: 0.2px solid #7F817F;">
+								 Fecha comprobante
+								 <a class="stretched-link float-right" style="font-size: 12px;"t  data-toggle="modal" href="#modalCalen">Cambiar</a>
+								<label class="float-right" id="fc"></label>
+								</div>
+					</div>
+
+					 <div class="form-row">
+								<div class="col-sm-12 " style="border-bottom: 0.2px solid #7F817F;">
+								Fecha Contabilizacion
+								<a class="stretched-link float-right" style="font-size: 12px;" data-toggle="modal" href="#modalCalen">Cambiar</a>
+						<label class="float-right" id="fc1"></label>
+						</div>
+					 </div>
+					 
+					 <div class="form-row">
+						<div class="col-sm-12" style="border-bottom: 0.2px solid #7F817F;">
+								Forma de pago
+								<a class="stretched-link float-right" style="font-size: 12px;"t  data-toggle="modal" href="">Cambiar</a>
+					 <label class="float-right" id="fp"></label>
+					
+						</div>
+
+						</div>
 						</br>
 	
 						
-					 <div class="form-row">
+					 <!-- <div class="form-row">
 						<div class="col-sm-3">
 								
 								Fecha Comprobante
 					 <input type="date" class="form-control form-control-sm" id="eFcomprobante" name="fechass" value="" required disabled>
 					
-					</div>
-						<div class="col-sm-3 ml-5">
+					</div> -->
+						<!-- <div class="col-sm-3 ml-5">
 								Fecha Contabilizacion
 								<input type="date" class="form-control form-control-sm" id="eFcontabilizacion" value="" required disabled>
-								</div>
+								</div> -->
 
-								<div class="col-sm-3 ml-5">
+								<!-- <div class="col-sm-3 ml-5">
 								Forma de pago
 								<input type="text" class="form-control form-control-sm" id="eFormaPago" required disabled>
 								</div>
 						
-						</div>
+						</div> -->
 						
-				 <div id="tablaEditar" class="row-sm-5 pt-5">
+				 <div id="tablaEditar" class="row-sm-5 pt-2">
 						<div class="table-responsive" style="height: 160px;">
 
 					 <table id ="tablaEd" class="table table-hover table-bordered table-sm table-striped ">
@@ -377,11 +403,12 @@
 					</div>
 				
 
-<div class="m-2 float-right">
+<div class="m-2 float-right"> 
+	
 	<button id="btn_editarCompra" class="btn btn-primary btn-sm" type="button">Editar</button>
 	<button id="btn_editarAceptar" class="btn btn-primary btn-sm" type="button" disabled="">Aceptar</button>
 	<button id="btn_editarEliminar" class="btn btn-primary btn-sm" type="button">Eliminar</button>
-	<button id="close-btn" class="btn btn-primary btn-sm" type="button" onclick="closeModal();" >Salir</button>
+	<button class="btn btn-light btn-sm" type="button" data-dismiss="modal">Cerrar</button>
 
 </div>
 
@@ -775,6 +802,32 @@ $(function () {
 })
 </script> -->
 
-</head>
+<div class="modal" id="modalCalen">
+	<div class="modal-dialog modal-dialog-centered modal-sm">
+		<div class="modal-content">
 
-	<body>
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title">Cambiar Fecha</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">              
+					 
+					 <div class="form-row">
+						
+          <input type="date" class="form-control form-control-sm" id="calen">
+						
+			</div>
+
+			<button id="btn_AceptarFecha" class="btn btn-primary btn-sm" type="button" disabled="">Aceptar</button>
+	    <button class="btn btn-light btn-sm" type="button" data-dismiss="modal">Cerrar</button>
+
+						</div>
+</div>
+</div>
+</div>
+
+
+	

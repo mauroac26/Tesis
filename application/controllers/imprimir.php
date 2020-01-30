@@ -12,7 +12,7 @@ $this->load->model('mcompras');
 
 public function index(){
 
-	
+    
 $this->load->library('tcpdf/tcpdf.php');
 
 }

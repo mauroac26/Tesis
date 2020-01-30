@@ -2,6 +2,8 @@
 
 var id = 0;
 var fechaCarga ="";
+var fComprobante = "";
+var fConta = "";
 var totalComprobante = 0;
 var totalPVenta = 0;
 $.post("compras/getCompras",
@@ -25,8 +27,11 @@ $.post("compras/getCompras",
 					
 			 fechaCarga = fechasFormato(item.fCarga);
 			 var totalComprobante = agregarCeros(item.comprobante, 1);
-			 var fComprobante = fechasFormato(item.fComprobante);
+			     fComprobante = fechasFormato(item.fComprobante);
 			 var fVencimiento = fechasFormato(item.ven);
+			 
+
+     
 
 			 $('#tablaCompras').append(
 			 
@@ -51,6 +56,8 @@ $.post("compras/getCompras",
 					 document.getElementById(ifv).style.background = "#CB4335";
 							
 							}    
+
+
 						
 ifv++;
 
@@ -80,19 +87,26 @@ $("tr").click(function() {
 			 
 var totalPVenta = agregarCeros(item.puntoVenta, 2);
 			 
-			
+			 fConta = fechasFormato(item.fContab);
 			
 
 			 $('#eFcomprobante').val(item.fComprobante);
 			 $('#eFcontabilizacion').val(item.fContab);
 			 $('#eFormaPago').val(item.formaPago);
+
+			  
 			
 			 document.getElementById("eProveedor").innerHTML = item.apeynom;
 			 document.getElementById("eComprobante").innerHTML = item.tipoComprobante+''+item.tipoFactura+''+totalPVenta+'-'+id;
-			document.getElementById("eFCarga").innerHTML = fechaCarga;
-			document.getElementById("eTotal").innerHTML = "$"+item.total;
-			document.getElementById("eCondicion").innerHTML = item.condicion;
+			 document.getElementById("eFCarga").innerHTML = fechaCarga;
+			 document.getElementById("eTotal").innerHTML = "$"+item.total;
+			 document.getElementById("eCondicion").innerHTML = item.condicion;
 				 
+
+				 document.getElementById("fc1").innerHTML = fConta;
+			 document.getElementById("fc").innerHTML = fComprobante;
+			 document.getElementById("fp").innerHTML = item.formaPago;
+			 $('#calen').val(item.fComprobante);
 
 			 });
 			});
@@ -127,16 +141,6 @@ var totalPVenta = agregarCeros(item.puntoVenta, 2);
 	});
 
  
-
-
-// Close Modal informacion de la compra
- function closeModal() {
-
-
-	 // modal.style.display = 'none';
-	window.location="compras";
-
- }
 
 var cont;
 var cantidad;
