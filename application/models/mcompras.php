@@ -23,7 +23,7 @@ public function getCompras(){
 		 $this->db->order_by('fCarga', 'desc');
 		 $r = $this->db->get();
 
-		 return $r->result;
+		 return $r->result();
 		}
 
 //OBTIENE DATOS DE LA COMPRA, MUESTRA EN INFORMACION DE LA COMPRA
