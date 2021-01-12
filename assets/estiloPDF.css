@@ -1,0 +1,71 @@
+h3{
+    font-family: Verdana;
+    font-size: 13;
+}
+
+table{
+    /*width: 100%;*/
+    border-collapse: separate;
+    border-spacing: 15px 2px;
+   
+}
+
+th{
+    /*width: 19%;*/
+    font-family: Verdana;
+    font-size: 11px;
+    text-align: center;
+    
+}
+
+td{
+    /*width: 19%;*/
+    font-family: Verdana;
+    font-size: 10px;
+    text-align: right;
+    /*padding-left: 10;*/
+    
+}
+
+div#contenedor { 
+    margin-top: 5px;
+    float:left; 
+    width: 60%;
+    padding-left: 305px;
+    font-size: 9px;
+    font-family: Verdana;
+    font-weight: bold;
+ text-align: right;
+}
+
+div#total { float:left; 
+
+width: 11%;
+}
+
+div#iva { float:left; 
+    width: 15%; 
+ 
+}
+
+div#excento { float:left; 
+    width: 16%;
+
+}
+
+div#nograv { float:left; 
+width: 22%;
+
+}
+
+div#gravado { float:left; 
+width: 17%;
+
+
+}
+
+div#totales { float:left; 
+    width: 15%;
+
+
+}
